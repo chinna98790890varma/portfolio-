@@ -9,8 +9,7 @@
     <body> 
         <nav class="navbar">
             <div class="logo">
-                <img src="ruchi.jpeg" alt="Profile" class="profile-img" id="profileImgNav" style="cursor: pointer;">
-                <span class="logo-text">Vishnuvardhan Potharaju</span>
+                <img src="what.jpeg" alt="Profile" class="profile-img" id="profileImgNav" style="cursor: pointer;">
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
@@ -21,7 +20,6 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="Chinna.CV.docx" download="Chinna.CV.docx" class="resume-btn" rel="noopener noreferrer">Download Resume</a>
                 <button id="darkModeToggle"></button>
                 <div class="social-links">
                     <a href="https://github.com/chinna98790890varma" target="_blank">GitHub</a>
@@ -32,22 +30,89 @@
         </nav>
 
         <main id="home" class="hero-section">
+            <div class="hero-bg">
+                <span class="hero-particle particle-1"></span>
+                <span class="hero-particle particle-2"></span>
+                <span class="hero-particle particle-3"></span>
+                <span class="hero-particle particle-4"></span>
+                <span class="hero-particle particle-5"></span>
+                <span class="hero-particle particle-6"></span>
+            </div>
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I’m Vishnuvardhan Potharaju, building creative web experiences.</p>
-                <a href="#about" class="cta-button">Learn More</a>
+                <div class="hero-copy">
+                    <span class="hero-pretitle">Hello, I’m</span>
+                    <h1>Vishnuvardhan Potharaju</h1>
+                    <p class="hero-subtitle">Building immersive interfaces and polished web experiences.</p>
+                    <p class="hero-role">
+                        <span>Role:</span>
+                        <span id="typingText" class="typing-text"></span>
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="cta-button primary">Learn More</a>
+                        <a href="Vishnu CV.docx" download class="cta-button secondary">Download Resume</a>
+                    </div>
+                </div>
+                <div class="hero-profile-card">
+                    <div class="profile-frame">
+                        <img src="what.jpeg" alt="Vishnuvardhan Portrait" class="hero-profile-img">
+                    </div>
+                </div>
             </div>
         </main>
 
         <section id="about" class="about-section">
-            <div class="section-content">
-                <h2>About Me</h2>
-                <div class="about-video-container">
-                    <video class="about-video" controls poster="what.jpeg">
-                        <source src="vishnu.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+            <div class="section-content about-reveal">
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <span class="section-label">About Me</span>
+                        <h2>Creative full-stack developer focused on polished web experiences</h2>
+                        <p>I build modern web applications with a strong emphasis on clean UI, reliable back-end logic, and smooth user interactions. My focus is on delivering elegant solutions that feel fast, responsive, and intuitive.</p>
+                        <div class="about-stats">
+                            <div class="stat-card reveal">
+                                    <span class="stat-value counter" data-target="3">0</span>
+                                    <span class="stat-label">Years Experience</span>
+                                </div>
+                                <div class="stat-card reveal">
+                                    <span class="stat-value counter" data-target="5">0</span>
+                                    <span class="stat-label">Projects Delivered</span>
+                                </div>
+                                <div class="stat-card reveal">
+                                    <span class="stat-value counter" data-target="0">0</span>
+                                    <span class="stat-label">Clients Worked With</span>
+                                </div>
+                        </div>
+                        <div class="about-skill-cards">
+                            <div class="about-skill-card reveal">
+                                <div class="skill-badge">UI</div>
+                                <h3>UI/UX Design</h3>
+                                <p>Designing interfaces that are intuitive, accessible, and visually engaging.</p>
+                            </div>
+                            <div class="about-skill-card reveal">
+                                <div class="skill-badge">FE</div>
+                                <h3>Front-end</h3>
+                                <p>Building responsive interfaces using HTML, CSS, JavaScript and modern frameworks.</p>
+                            </div>
+                            <div class="about-skill-card reveal">
+                                <div class="skill-badge">BE</div>
+                                <h3>Back-end</h3>
+                                <p>Creating APIs, databases, and server-side logic for scalable applications.</p>
+                            </div>
+                            <div class="about-skill-card reveal">
+                                <div class="skill-badge">OPT</div>
+                                <h3>Performance</h3>
+                                <p>Optimizing apps for speed, accessibility, and smooth cross-device experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-media reveal">
+                        <div class="about-video-frame">
+                            <video id="aboutVideo" class="about-video" controls muted playsinline poster="what.jpeg">
+                                <source src="vishnu.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -81,28 +146,69 @@
         </section>
 
         <section id="skills" class="skills-section">
-            <div class="section-content">
-                <h2>Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">💻</div>
-                        <h3>Web Development</h3>
-                        <p>Full-Stack Web Development, Java Programming</p>
+            <div class="section-content skills-reveal">
+                <div class="skills-grid-wrap">
+                    <div class="skills-left">
+                        <h2>Technical Skills</h2>
+                        <p class="skills-intro">Core technologies I use daily. Progress bars animate when this section becomes visible.</p>
+
+                        <div class="skills-list">
+                            <div class="skill">
+                                <div class="skill-head">
+                                    <span class="skill-name">HTML & CSS</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar" data-percentage="90">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-head">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar" data-percentage="85">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-head">
+                                    <span class="skill-name">React</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="progress-bar" data-percentage="75">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="skill-head">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="progress-bar" data-percentage="70">
+                                    <div class="progress-fill"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">📊</div>
-                        <h3>Productivity</h3>
-                        <p>Microsoft Office, Microsoft Excel</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🧠</div>
-                        <h3>Soft Skills</h3>
-                        <p>Coding & Problem Solving, Teamwork, Communication Skills, Creative Thinking</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🌍</div>
-                        <h3>Languages</h3>
-                        <p>English, Telugu</p>
+
+                    <div class="skills-right">
+                        <div class="tech-icons" aria-hidden="true">
+                            <span class="tech-icon">⚛️</span>
+                            <span class="tech-icon">🟦</span>
+                            <span class="tech-icon">🟩</span>
+                            <span class="tech-icon">🌐</span>
+                            <span class="tech-icon">🧠</span>
+                        </div>
+
+                        <div class="skill-visual">
+                            <div class="visual-circle">
+                                <div class="visual-center">Skills</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -110,40 +216,76 @@
         <section id="projects" class="projects-section">
             <div class="section-content">
                 <h2>Projects</h2>
-                <div class="project-card">
-                    <div class="project-badge">AS</div>
-                    <div class="project-info">
-                        <h3>AfterSchool Booking System</h3>
-                        <p>Full-stack booking platform for after-school lessons built with Vue.js, Express.js and MongoDB Atlas.</p>
-                        <ul>
-                            <li>Search and filter lessons by subject, location, price, and availability</li>
-                            <li>Shopping cart and checkout flow for lesson booking</li>
-                            <li>RESTful API integration and real-time availability updates</li>
-                            <li>Deployment on GitHub Pages and Render.com</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/chinna98790890varma/CST3144-afterschool-frontend" target="_blank">Frontend Repo</a>
-                            <a href="https://github.com/chinna98790890varma/CST3144-afterschool-backend" target="_blank">Backend Repo</a>
-                            <a href="https://chinna98790890varma.github.io/CST3144-afterschool-frontend" target="_blank">Live App</a>
+                <div class="projects-grid">
+                    <article class="project-card" data-live="https://example.com">
+                        <div class="project-media">
+                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80" alt="Project screenshot">
                         </div>
-                    </div>
-                </div>
+                        <div class="project-overlay">
+                            <h3>AfterSchool Booking System</h3>
+                            <p>Full-stack booking platform (Vue, Express, MongoDB). Search, cart, and real-time availability.</p>
+                            <div class="project-actions">
+                                <a href="https://chinna98790890varma.github.io/CST3144-afterschool-frontend" target="_blank" class="btn">Live Preview</a>
+                                <a href="https://github.com/chinna98790890varma/CST3144-afterschool-frontend" target="_blank" class="btn ghost">Repo</a>
+                            </div>
+                        </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-badge">F2</div>
-                    <div class="project-info">
-                        <h3>Farmer2Home Connect</h3>
-                        <p>Direct producer-to-consumer digital marketplace (MERN) connecting farmers and consumers with real-time communication, OTP/JWT security, and responsive SPA UX.</p>
-                        <ul>
-                            <li>Direct marketplace reducing intermediaries and improving farmer income</li>
-                            <li>Secure authentication with OTP verification and JWT tokens</li>
-                            <li>Real-time updates and notifications using Socket.io</li>
-                            <li>Responsive SPA for seamless mobile and desktop experiences</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="#" target="_blank">Project Summary</a>
+                    <article class="project-card" data-live="#">
+                        <div class="project-media">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Project screenshot">
                         </div>
-                    </div>
+                        <div class="project-overlay">
+                            <h3>Farmer2Home Connect</h3>
+                            <p>Producer-to-consumer MERN marketplace with authentication and real-time updates.</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="btn">Live Preview</a>
+                                <a href="#" target="_blank" class="btn ghost">Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-live="#">
+                        <div class="project-media">
+                            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1200&q=80" alt="Project screenshot">
+                        </div>
+                        <div class="project-overlay">
+                            <h3>University Project 3</h3>
+                            <p>Responsive web app built for a university assignment showcasing core functionality.</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="btn">Live Preview</a>
+                                <a href="#" target="_blank" class="btn ghost">Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-live="#">
+                        <div class="project-media">
+                            <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=1200&q=80" alt="Project screenshot">
+                        </div>
+                        <div class="project-overlay">
+                            <h3>University Project 4</h3>
+                            <p>Interactive frontend project with smooth animations and accessible components.</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="btn">Live Preview</a>
+                                <a href="#" target="_blank" class="btn ghost">Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-live="#">
+                        <div class="project-media">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Project screenshot">
+                        </div>
+                        <div class="project-overlay">
+                            <h3>University Project 5</h3>
+                            <p>Capstone-style project combining backend APIs and polished frontend UI.</p>
+                            <div class="project-actions">
+                                <a href="#" target="_blank" class="btn">Live Preview</a>
+                                <a href="#" target="_blank" class="btn ghost">Repo</a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -162,7 +304,7 @@
 
         <div id="imageModal" class="modal">
             <span class="modal-close" id="modalClose">×</span>
-            <img class="modal-image" id="modalImage" src="ruchi.jpeg" alt="Full Profile Picture">
+            <img class="modal-image" id="modalImage" src="what.jpeg" alt="Full Profile Picture">
         </div>
 
 <script src="script.js"></script>
